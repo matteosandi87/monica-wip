@@ -1,6 +1,17 @@
 {
-  "name": "frontend",
+  "name": "networksync-frontend",
+  "version": "1.0.0",
+  "description": "NetworkSync Frontend - Professional Relationship Intelligence Platform",
+  "type": "module",
   "packageManager": "yarn@4.6.0",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 3000",
+    "start": "vite --host 0.0.0.0 --port 3000",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "type-check": "tsc --noEmit"
+  },
   "dependencies": {
     "@supabase/supabase-js": "^2.52.1",
     "@tanstack/react-query": "^5.83.0",
