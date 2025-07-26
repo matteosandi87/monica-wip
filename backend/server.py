@@ -28,7 +28,12 @@ app = FastAPI(
 # CORS configuration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Configure based on environment
+    allow_origins=[
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+        "https://*.preview.emergentagent.com",
+        "https://*.emergent.sh"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
