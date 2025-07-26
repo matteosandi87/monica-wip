@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import toast, { Toaster } from 'react-hot-toast'
-import { Network, Users, Activity, Settings } from 'lucide-react'
+import { Network, Users, Activity, Settings as SettingsIcon } from 'lucide-react'
 import './App.css'
 
 // Import components (will be created in subsequent steps)
